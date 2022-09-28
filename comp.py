@@ -2,9 +2,8 @@ import difflib
 import time
 
 with open('devices.txt') as routers:
-    lines = routers.readlines()
-
-IP = 192.168.10.
+    for IP in routers:
+        lines = routers.readlines()
 
 def compare():
     show_pre = "Show_pre"
